@@ -1,0 +1,601 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package gensync
+dpkg-buildpackage: info: source version 2.0.6-1
+dpkg-buildpackage: info: source distribution bullseye
+dpkg-buildpackage: info: source changed by Ari Trachtenberg <trachten@bu.edu>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building gensync using existing ./gensync_2.0.6.orig.tar.gz
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/libgensync.a, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/cmake_install.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CTestTestfile.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeCache.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/DartConfiguration.tcl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/install_manifest.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CPackSourceConfig.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CPackConfig.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/Testing
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/Testing/Temporary
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/Testing/Temporary/CTestCostData.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/Testing/Temporary/LastTest.log, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/CMakeOutput.log, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/CMakeRuleHashes.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/progress.marks, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/cmake.check_cache, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/CMakeDirectoryInformation.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/TargetDirectories.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Makefile.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Makefile2, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousMemCheck.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousBuild.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalStart.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousTest.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/flags.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/cmake_clean_target.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/link.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Data
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Tools
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o.d, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalUpdate.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousConfigure.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyTest.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Experimental.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemoryCheck.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyCoverage.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/3.22.1
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeCCompiler.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeSystem.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdC
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdC/a.out, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdC/tmp
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdCXX
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdCXX/a.out, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdCXX/tmp
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalMemCheck.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalCoverage.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousStart.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousUpdate.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalConfigure.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousCoverage.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalBuild.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Continuous.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ContinuousSubmit.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyStart.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlySubmit.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalSubmit.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyMemCheck.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyBuild.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyConfigure.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/NightlyUpdate.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/Nightly.dir/progress.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/DependInfo.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/compiler_depend.ts, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/compiler_depend.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/cmake_clean.cmake, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/build.make, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file obj-x86_64-linux-gnu/CMakeFiles/ExperimentalTest.dir/progress.make, use --include-removal to override
+dpkg-source: info: building gensync in gensync_2.0.6-1.debian.tar.xz
+dpkg-source: info: building gensync in gensync_2.0.6-1.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+	cd obj-x86_64-linux-gnu && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run -DCMAKE_SKIP_INSTALL_ALL_DEPENDENCY=ON "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu ..
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_USE_PACKAGE_REGISTRY
+
+
+-- Build files have been written to: /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu
+   dh_auto_build
+	cd obj-x86_64-linux-gnu && make -j2 "INSTALL=install --strip-program=true" VERBOSE=1
+make[1]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/home/chxy517/Desktop/gensync/gensync-2.0.6 -B/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/CMakeFiles /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[2]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gensync.dir/build.make CMakeFiles/gensync.dir/depend
+make[3]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+cd /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/chxy517/Desktop/gensync/gensync-2.0.6 /home/chxy517/Desktop/gensync/gensync-2.0.6 /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/DependInfo.cmake --color=
+make[3]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gensync.dir/build.make CMakeFiles/gensync.dir/build
+make[3]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+[  3%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Aux/Logger.cpp
+[  6%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Aux/UID.cpp
+[ 10%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Aux/SyncMethod.cpp
+[ 13%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Aux/Sketches.cpp
+[ 17%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Data/DataObject.cpp
+[ 20%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Communicants/CommSocket.cpp
+[ 24%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Communicants/CommString.cpp
+[ 27%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Communicants/Communicant.cpp
+[ 31%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Communicants/CommDummy.cpp
+[ 34%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/CPISync.cpp
+[ 37%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/GenSync.cpp
+[ 41%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/InterCPISync.cpp
+[ 44%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/probCPISync.cpp
+[ 48%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/HashSync.cpp
+[ 51%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/IBLT.cpp
+[ 55%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/IBLTMultiset.cpp
+[ 58%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/IBLTSync.cpp
+[ 62%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/IBLTSync_Multiset.cpp
+[ 65%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/IBLTSetOfSets.cpp
+[ 68%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/Compact2DBitArray.cpp
+[ 72%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/Cuckoo.cpp
+[ 75%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/CuckooSync.cpp
+[ 79%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Syncs/FullSync.cpp
+[ 82%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Benchmarks/Runner.cpp
+[ 86%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Benchmarks/BenchParams.cpp
+[ 89%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Benchmarks/FromFileGen.cpp
+[ 93%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/Tools/EncodeJoin.cpp
+[ 96%] Building CXX object CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o
+/usr/bin/c++ -DRECORD=\".gensync\" -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/common/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/hll/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/incubator-datasketches-cpp/fi/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/include -I/home/chxy517/Desktop/gensync/gensync-2.0.6/include -std=c++11 -DDEFAULT_LOGLEVEL=TEST -std=gnu++11 -MD -MT CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o -MF CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o.d -o CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o -c /home/chxy517/Desktop/gensync/gensync-2.0.6/gensync-core/src/main.cpp
+[100%] Linking CXX static library libgensync.a
+/usr/bin/cmake -P CMakeFiles/gensync.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gensync.dir/link.txt --verbose=1
+/usr/bin/ar qc libgensync.a CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o
+/usr/bin/ranlib libgensync.a
+make[3]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+[100%] Built target gensync
+make[2]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+   dh_auto_test
+	cd obj-x86_64-linux-gnu && make -j2 test ARGS\+=--verbose ARGS\+=-j2
+make[1]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+Running tests...
+/usr/bin/ctest --force-new-ctest-process --verbose -j2
+UpdateCTestConfiguration  from :/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/DartConfiguration.tcl
+Parse Config file:/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/DartConfiguration.tcl
+Parse Config file:/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu/DartConfiguration.tcl
+Test project /home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+No tests were found!!!
+make[1]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/gensync/
+	cd obj-x86_64-linux-gnu && make -j2 install DESTDIR=/home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/home/chxy517/Desktop/gensync/gensync-2.0.6 -B/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[2]: Entering directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+make[2]: Nothing to be done for 'preinstall'.
+make[2]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/lib/x86_64-linux-gnu/libgensync.a
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/ConstantsAndTypes.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/Auxiliary.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/UID.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/Logger.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/ForkHandle.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/Sketches.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/Exceptions.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Aux/SyncMethod.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data/DataObject.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data/DataFileC.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data/DataObjC.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data/DataPriorityObject.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Data/DataMemC.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Communicants
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Communicants/CommString.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Communicants/CommSocket.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Communicants/Communicant.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Communicants/CommDummy.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLTMultiset.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CuckooSync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CPISync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CPISync_OneLessRound.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/ProbCPISync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/InterCPISync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CPISync_HalfRound_Hashed.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/Compact2DBitArray.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/GenSync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/FullSync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CPISync_HalfRound.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/HashSync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLTSetOfSets.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLT.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLTSync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLTSync_HalfRound.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/CPISync_ExistingConnection.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/IBLTSync_Multiset.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/PrioCPISync.h
+-- Installing: /home/chxy517/Desktop/gensync/gensync-2.0.6/debian/gensync/usr/include/GenSync/Syncs/Cuckoo.h
+make[1]: Leaving directory '/home/chxy517/Desktop/gensync/gensync-2.0.6/obj-x86_64-linux-gnu'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'gensync' in '../gensync_2.0.6-1_amd64.deb'.
+ dpkg-genbuildinfo -O../gensync_2.0.6-1_amd64.buildinfo
+ dpkg-genchanges -O../gensync_2.0.6-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian gensync_2.0.6-1_amd64.changes ...
+E: gensync changes: bad-distribution-in-changes-file bullseye
+E: gensync: changelog-is-dh_make-template
+E: gensync source: debian-rules-is-dh_make-template
+E: gensync: doc-base-file-references-missing-file gensync.gensync:10 /usr/share/doc/gensync/gensync.sgml.gz
+E: gensync: doc-base-file-references-missing-file gensync.gensync:13 /usr/share/doc/gensync/gensync.ps.gz
+E: gensync: doc-base-file-references-missing-file gensync.gensync:16 /usr/share/doc/gensync/gensync.text.gz
+E: gensync: doc-base-file-references-missing-file gensync.gensync:19 /usr/share/doc/gensync/html/index.html
+E: gensync: doc-base-file-references-missing-file gensync.gensync:20 /usr/share/doc/gensync/html/*.html
+E: gensync: extended-description-is-empty
+E: gensync source: readme-source-is-dh_make-template
+E: gensync source: source-contains-cmake-cache-file obj-x86_64-linux-gnu/CMakeCache.txt
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdC/a.out
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/3.22.1/CompilerIdCXX/a.out
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Logger.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/Sketches.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/SyncMethod.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Aux/UID.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/BenchParams.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/FromFileGen.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Benchmarks/Runner.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommDummy.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommSocket.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/CommString.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Communicants/Communicant.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Data/DataObject.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CPISync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Compact2DBitArray.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/Cuckoo.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/CuckooSync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/FullSync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/GenSync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/HashSync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLT.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTMultiset.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSetOfSets.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/IBLTSync_Multiset.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/InterCPISync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Syncs/probCPISync.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/Tools/EncodeJoin.cpp.o
+E: gensync source: source-is-missing obj-x86_64-linux-gnu/CMakeFiles/gensync.dir/gensync-core/src/main.cpp.o
+W: gensync: description-synopsis-starts-with-article
+W: gensync source: dh-make-template-in-source [debian/gensync.cron.d.ex]
+W: gensync source: dh-make-template-in-source [debian/gensync.doc-base.ex]
+W: gensync source: dh-make-template-in-source [debian/manpage.1.ex]
+W: gensync source: dh-make-template-in-source [debian/manpage.md.ex]
+W: gensync source: dh-make-template-in-source [debian/manpage.sgml.ex]
+W: gensync source: dh-make-template-in-source [debian/manpage.xml.ex]
+W: gensync source: dh-make-template-in-source [debian/postinst.ex]
+W: gensync source: dh-make-template-in-source [debian/postrm.ex]
+W: gensync source: dh-make-template-in-source [debian/preinst.ex]
+W: gensync source: dh-make-template-in-source [debian/prerm.ex]
+W: gensync source: dh-make-template-in-source [debian/salsa-ci.yml.ex]
+W: gensync source: dh-make-template-in-source [debian/shlibs.local.ex]
+W: gensync source: dh-make-template-in-source [debian/watch.ex]
+W: gensync: doc-base-abstract-field-is-template gensync.gensync:6
+W: gensync: doc-base-unknown-section gensync.gensync:7 unknown
+W: gensync: initial-upload-closes-no-bugs
+W: gensync source: missing-license-paragraph-in-dep5-copyright gpl-3.0+ [debian/copyright:9]
+W: gensync: readme-debian-contains-debmake-template
+W: gensync: synopsis-too-long
+W: gensync: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile dsc gensync_2.0.6-1.dsc Ari Trachtenberg <trachten@bu.edu>
+gpg: skipped "Ari Trachtenberg <trachten@bu.edu>": No secret key
+gpg: /tmp/debsign.pTBM31QZ/gensync_2.0.6-1.dsc: clear-sign failed: No secret key
+debsign: gpg error occurred!  Aborting....

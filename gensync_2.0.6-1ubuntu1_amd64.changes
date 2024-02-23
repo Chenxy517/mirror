@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 11 Feb 2024 14:07:46 -0500
+Source: gensync
+Binary: gensync
+Built-For-Profiles: noudeb
+Architecture: source amd64
+Version: 2.0.6-1ubuntu1
+Distribution: bullseye
+Urgency: medium
+Maintainer: Ari Trachtenberg <trachten@bu.edu>
+Changed-By: Ari Trachtenberg <trachten@bu.edu>
+Description:
+ gensync    - a library for efficient synchronization of data over a network. G
+Changes:
+ gensync (2.0.6-1ubuntu1) bullseye; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+   *
+Checksums-Sha1:
+ 20692a14e22f45f6a092ce65229faf3dfdddda34 1265 gensync_2.0.6-1ubuntu1.dsc
+ 37b1c44d33f7ada7d7659e67ced4437093a8b5eb 11096616 gensync_2.0.6.orig.tar.gz
+ 8e53988e80eba97e5ea485512d9747b659a89341 46228 gensync_2.0.6-1ubuntu1.debian.tar.xz
+ 454c9524856e625e4fc7d2636d799d0102c8caec 6598 gensync_2.0.6-1ubuntu1_amd64.buildinfo
+ 9be04ae665ea15fed38fb5728301a47cd75f1552 891378 gensync_2.0.6-1ubuntu1_amd64.deb
+Checksums-Sha256:
+ e4de2df79105b02a8102b2764ce68fbd3dbe65a77ddccc07669a8f4ed7c40f2a 1265 gensync_2.0.6-1ubuntu1.dsc
+ aefe3ce0839699acb8d5c9c62771887356027e92b2cbfa82b9f3202cf4d64f1a 11096616 gensync_2.0.6.orig.tar.gz
+ ea31d1a5a82a545ddba2f10752ebe6bfcd59097aa280742f7b186ad22434f13b 46228 gensync_2.0.6-1ubuntu1.debian.tar.xz
+ fb786b294b531ac6e31364e5b123f4433d92b57a08b2a786f0d5d76c289ec542 6598 gensync_2.0.6-1ubuntu1_amd64.buildinfo
+ d59cc1947ef4b66049bf4dc2f25900eee2827e544e9a006a8de5320b9115f7c4 891378 gensync_2.0.6-1ubuntu1_amd64.deb
+Files:
+ 59071752b0da5b7ccb8becacfe4082ca 1265 libs optional gensync_2.0.6-1ubuntu1.dsc
+ 8b84920caa5850aca7421e1ef8694f1b 11096616 libs optional gensync_2.0.6.orig.tar.gz
+ 11fab609b564a6e7dd1c9d0c9b558508 46228 libs optional gensync_2.0.6-1ubuntu1.debian.tar.xz
+ f4be854e85cd129dcf0704df27c4bcc2 6598 libs optional gensync_2.0.6-1ubuntu1_amd64.buildinfo
+ 89dc33fc7ce1bfbf82ba0f06f31fab7d 891378 libdevel optional gensync_2.0.6-1ubuntu1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iLMEAQEKAB0WIQRlMyRBwSJZ5mZy/dlwYeIhrqYMRgUCZckpMAAKCRBwYeIhrqYM
+RjvWBACD3E+v7dkNy59UJiCnBfQyKf5BHbnUlKpYWuOnPZkcyfQuZ/caw/LXpaQs
+gZ3qXpaUyW7Eft8Z+mPyYMISDpmZ5qXO6JUDIRHIPgjizXz78gsAUU53StJNjydK
+jdZ67Y3NLoK+bCUlDmdWKhZ7OGICeu3yI49UVB26eb9mPMvsAA==
+=YhBW
+-----END PGP SIGNATURE-----
